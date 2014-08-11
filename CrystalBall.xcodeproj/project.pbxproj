@@ -21,6 +21,9 @@
 		CC5F1B421921C7D900B7A9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5F1B241921C7D800B7A9AC /* UIKit.framework */; };
 		CC5F1B4A1921C7D900B7A9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC5F1B481921C7D900B7A9AC /* InfoPlist.strings */; };
 		CC5F1B4C1921C7D900B7A9AC /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5F1B4B1921C7D900B7A9AC /* CrystalBallTests.m */; };
+		CC5F1B57192413C700B7A9AC /* ACCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5F1B56192413C700B7A9AC /* ACCrystalBall.m */; };
+		CC5F1B591926D10500B7A9AC /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC5F1B581926D10500B7A9AC /* crystal_ball.mp3 */; };
+		CC5F1B5B1926D14200B7A9AC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5F1B5A1926D14200B7A9AC /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		CC5F1B471921C7D900B7A9AC /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		CC5F1B491921C7D900B7A9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC5F1B4B1921C7D900B7A9AC /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		CC5F1B55192413C700B7A9AC /* ACCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCrystalBall.h; sourceTree = "<group>"; };
+		CC5F1B56192413C700B7A9AC /* ACCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCrystalBall.m; sourceTree = "<group>"; };
+		CC5F1B581926D10500B7A9AC /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		CC5F1B5A1926D14200B7A9AC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5F1B5B1926D14200B7A9AC /* AudioToolbox.framework in Frameworks */,
 				CC5F1B231921C7D800B7A9AC /* CoreGraphics.framework in Frameworks */,
 				CC5F1B251921C7D800B7A9AC /* UIKit.framework in Frameworks */,
 				CC5F1B211921C7D800B7A9AC /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		CC5F1B1F1921C7D800B7A9AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC5F1B5A1926D14200B7A9AC /* AudioToolbox.framework */,
 				CC5F1B201921C7D800B7A9AC /* Foundation.framework */,
 				CC5F1B221921C7D800B7A9AC /* CoreGraphics.framework */,
 				CC5F1B241921C7D800B7A9AC /* UIKit.framework */,
@@ -112,13 +121,14 @@
 		CC5F1B261921C7D800B7A9AC /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				CC5F1B2F1921C7D900B7A9AC /* ACAppDelegate.h */,
-				CC5F1B301921C7D900B7A9AC /* ACAppDelegate.m */,
+				CC5F1B581926D10500B7A9AC /* crystal_ball.mp3 */,
 				CC5F1B321921C7D900B7A9AC /* Main.storyboard */,
 				CC5F1B351921C7D900B7A9AC /* ACViewController.h */,
 				CC5F1B361921C7D900B7A9AC /* ACViewController.m */,
 				CC5F1B381921C7D900B7A9AC /* Images.xcassets */,
 				CC5F1B271921C7D800B7A9AC /* Supporting Files */,
+				CC5F1B55192413C700B7A9AC /* ACCrystalBall.h */,
+				CC5F1B56192413C700B7A9AC /* ACCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 		CC5F1B271921C7D800B7A9AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC5F1B2F1921C7D900B7A9AC /* ACAppDelegate.h */,
+				CC5F1B301921C7D900B7A9AC /* ACAppDelegate.m */,
 				CC5F1B281921C7D800B7A9AC /* CrystalBall-Info.plist */,
 				CC5F1B291921C7D800B7A9AC /* InfoPlist.strings */,
 				CC5F1B2C1921C7D800B7A9AC /* main.m */,
@@ -231,6 +243,7 @@
 			files = (
 				CC5F1B391921C7D900B7A9AC /* Images.xcassets in Resources */,
 				CC5F1B2B1921C7D800B7A9AC /* InfoPlist.strings in Resources */,
+				CC5F1B591926D10500B7A9AC /* crystal_ball.mp3 in Resources */,
 				CC5F1B341921C7D900B7A9AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +266,7 @@
 				CC5F1B311921C7D900B7A9AC /* ACAppDelegate.m in Sources */,
 				CC5F1B371921C7D900B7A9AC /* ACViewController.m in Sources */,
 				CC5F1B2D1921C7D800B7A9AC /* main.m in Sources */,
+				CC5F1B57192413C700B7A9AC /* ACCrystalBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

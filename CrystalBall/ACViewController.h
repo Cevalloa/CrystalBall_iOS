@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class ACCrystalBall;
+
 @interface ACViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) ACCrystalBall *crystalBall;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+-(void) makePrediction;
 @end
